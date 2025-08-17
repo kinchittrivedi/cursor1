@@ -1,0 +1,57 @@
+[
+  {
+    "id": "ch01_q01",
+    "question_type": "mcq",
+    "skill_id": "Kharif crops",
+    "prompt": "Which is a Kharif crop?",
+    "options": ["Wheat", "Gram", "Paddy", "Mustard"],
+    "answer": "C",
+    "rationale": "Paddy is sown with onset of monsoon (Kharif).",
+    "misconception_tags": ["season_confusion"]
+  },
+  {
+    "id": "ch01_q02",
+    "question_type": "mcq",
+    "skill_id": "Soil preparation",
+    "prompt": "The main purpose of ploughing is to:",
+    "options": ["Kill insects", "Loosen soil and aerate", "Add fertilizers", "Harvest"],
+    "answer": "B",
+    "rationale": "Ploughing loosens soil improving aeration.",
+    "misconception_tags": ["tool_function"]
+  },
+  {
+    "id": "ch01_q03",
+    "question_type": "mcq",
+    "skill_id": "Irrigation",
+    "prompt": "Drip irrigation is most useful for:",
+    "options": ["Rice fields", "Orchards and row crops", "Flood plains", "Deepwater crops"],
+    "answer": "B",
+    "rationale": "Delivers water near roots, ideal for orchards/rows.",
+    "misconception_tags": ["method_matching"]
+  },
+  {
+    "id": "ch01_q04",
+    "question_type": "mcq",
+    "skill_id": "Manure vs fertilizer",
+    "prompt": "Fertilizers are different from manure because they:",
+    "options": ["Improve soil structure", "Are organic residues", "Provide specific nutrients", "Do not dissolve"],
+    "answer": "C",
+    "rationale": "Fertilizers supply targeted nutrients like N, P, K.",
+    "misconception_tags": ["organic_vs_inorganic"]
+  },
+  {
+    "id": "ch01_q05",
+    "question_type": "mcq",
+    "skill_id": "Weed control",
+    "prompt": "Which is NOT a weed control method?",
+    "options": ["Mulching", "Selective herbicides", "Over-irrigation", "Manual weeding"],
+    "answer": "C",
+    "rationale": "Over-irrigation is not a weed control method.",
+    "misconception_tags": ["control_methods"]
+  },
+  {"id":"ch01_q06","question_type":"mcq","skill_id":"Storage","prompt":"Grains should be stored after:","options":["Harvest only","Drying to safe moisture","Fumigation only","Washing"],"answer":"B","rationale":"Drying prevents fungal growth.","misconception_tags":["storage"]},
+  {"id":"ch01_q07","question_type":"mcq","skill_id":"Crop rotation","prompt":"Crop rotation with legumes mainly:","options":["Adds nitrogen","Removes pests always","Increases weeds","Increases erosion"],"answer":"A","rationale":"Legumes fix atmospheric nitrogen.","misconception_tags":["rotation_benefit"]},
+  {"id":"ch01_q08","question_type":"mcq","skill_id":"Sowing","prompt":"Proper seed depth helps:","options":["Immediate harvest","Better germination","Pest attraction","Waterlogging"],"answer":"B","rationale":"Depth influences moisture and emergence.","misconception_tags":["sowing_depth"]},
+  {"id":"ch01_q09","question_type":"mcq","skill_id":"Irrigation","prompt":"Sprinkler irrigation is suitable for:","options":["Clayey soils only","Sandy and uneven fields","Flooded paddy","Saltwater"],"answer":"B","rationale":"Sprinklers suit light soils and uneven land.","misconception_tags":["method_matching"]},
+  {"id":"ch01_q10","question_type":"mcq","skill_id":"Animal husbandry","prompt":"A balanced dairy ration should have:","options":["Only carbohydrates","Only water","Carbs, protein, minerals, vitamins","Only fat"],"answer":"C","rationale":"Balanced ration includes all nutrients.","misconception_tags":["nutrition"]}
+]

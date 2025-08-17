@@ -1,0 +1,10 @@
+[
+  {"term":"Bacteria","definition":"Single-celled prokaryotic microorganisms."},
+  {"term":"Fungi","definition":"Eukaryotic organisms including molds and yeasts."},
+  {"term":"Protozoa","definition":"Single-celled eukaryotes, often motile."},
+  {"term":"Algae","definition":"Photosynthetic organisms, range from unicellular to multicellular."},
+  {"term":"Virus","definition":"Acellular infectious agent requiring host cells to replicate."},
+  {"term":"Nitrogen fixation","definition":"Conversion of N2 gas to ammonia by microbes."},
+  {"term":"Pasteurization","definition":"Heat treatment to reduce harmful microbes in food."},
+  {"term":"Preservation","definition":"Methods to slow or stop food spoilage."}
+]
