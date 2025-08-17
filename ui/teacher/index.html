@@ -13,6 +13,12 @@
 <body>
 	<h2>Teacher Dashboard</h2>
 	<div class="card">
+		<h3>Upload Class 8 Science PDF</h3>
+		<input type="file" id="pdf" accept="application/pdf" />
+		<button onclick="uploadPdf()">Upload</button>
+		<pre id="uploadResult"></pre>
+	</div>
+	<div class="card">
 		<h3>Leaderboard</h3>
 		<table id="lb"><thead><tr><th>Rank</th><th>Name</th><th>XP</th></tr></thead><tbody></tbody></table>
 	</div>
@@ -23,6 +29,15 @@
 		<table id="ms"><thead><tr><th>Chapter</th><th>Skill</th><th>Mastery</th></tr></thead><tbody></tbody></table>
 	</div>
 <script>
+async function uploadPdf(){
+	const f=document.getElementById('pdf').files[0]
+	if(!f){document.getElementById('uploadResult').innerText='Choose a PDF first';return}
+	const form=new FormData()
+	form.append('file',f)
+	const res=await fetch('/api/upload/pdf',{method:'POST',body:form})
+	const data=await res.json()
+	document.getElementById('uploadResult').innerText=JSON.stringify(data,null,2)
+}
 async function loadLeaderboard(){
 	const res=await fetch('/api/teacher/leaderboard')
 	const data=await res.json()

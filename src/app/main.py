@@ -4,6 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from .routers import study, gamify, teacher, students
 from .db import init_engine_and_session
 from .models import Base
+from .routers import upload
 
 app = FastAPI(title="Gamified Agentic AI Tutor - Class 8 Science")
 
@@ -20,6 +21,7 @@ app.include_router(students.router, prefix="/api/students", tags=["students"])
 app.include_router(study.router, prefix="/api/study", tags=["study"])
 app.include_router(gamify.router, prefix="/api/gamify", tags=["gamification"])
 app.include_router(teacher.router, prefix="/api/teacher", tags=["teacher"]) 
+app.include_router(upload.router, prefix="/api/upload", tags=["upload"]) 
 
 
 @app.get("/", response_class=HTMLResponse)
