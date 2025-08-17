@@ -1,0 +1,12 @@
+[
+  {"id":"ch02_num01","skill_id":"Dilution","problem":"A sanitizer is 5% active ingredient. How much concentrate to make 1 L of 1% solution?","solution_steps":["Use C1V1=C2V2","5%*V1=1%*1000 mL ⇒ V1=200 mL"],"answer":"200 mL"},
+  {"id":"ch02_num02","skill_id":"Growth rate","problem":"Bacteria double every 30 min. Starting with 1, how many after 2 hours?","solution_steps":["2 hours = 120 min ⇒ 4 doublings","Count = 1*2^4 = 16"],"answer":"16"},
+  {"id":"ch02_num03","skill_id":"Pasteurization","problem":"Milk at 72°C for 15 s. If flow rate is 200 L/min, volume treated in 15 s?","solution_steps":["200 L/min = 3.33 L/s","In 15 s: 3.33*15 ≈ 50 L"],"answer":"≈50 L"},
+  {"id":"ch02_num04","skill_id":"Preservation","problem":"Adding 20% sugar reduces water activity. For 2 kg jam, sugar mass?","solution_steps":["20% of 2000 g = 400 g"],"answer":"400 g"},
+  {"id":"ch02_num05","skill_id":"Nitrogen cycle","problem":"If fixation adds 12 kg N/ha and crop removes 10 kg, net change?","solution_steps":["Net +2 kg/ha"],"answer":"+2 kg/ha"},
+  {"id":"ch02_num06","skill_id":"Disinfection","problem":"1:50 bleach dilution from 5% stock. For 5 L, stock volume?","solution_steps":["Total parts=51, stock=1/51 of 5 L ≈ 0.098 L"],"answer":"≈98 mL"},
+  {"id":"ch02_num07","skill_id":"Concentration","problem":"Preservative at 0.2% in 250 g food: mass needed?","solution_steps":["0.2% of 250 g = 0.5 g"],"answer":"0.5 g"},
+  {"id":"ch02_num08","skill_id":"Dose","problem":"Vaccine dose 0.5 mL per child. For 120 children, volume?","solution_steps":["0.5*120=60 mL"],"answer":"60 mL"},
+  {"id":"ch02_num09","skill_id":"Rate","problem":"Food spoils in 8 h at 30°C, 16 h at 20°C. Approx Q10?","solution_steps":["Rate halves when temp drops 10°C ⇒ Q10≈2"],"answer":"≈2"},
+  {"id":"ch02_num10","skill_id":"Proportion","problem":"If 30% students vaccinated, in class of 40 how many?","solution_steps":["0.3*40=12"],"answer":"12"}
+]

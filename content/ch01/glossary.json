@@ -1,0 +1,12 @@
+[
+  {"term":"Kharif crops","definition":"Monsoon-season crops sown at the beginning of rains."},
+  {"term":"Rabi crops","definition":"Winter-season crops sown after monsoon."},
+  {"term":"Soil preparation","definition":"Tilling, ploughing, and leveling before sowing."},
+  {"term":"Sowing","definition":"Placing seeds in soil at proper depth and spacing."},
+  {"term":"Manure","definition":"Organic matter that improves soil structure and fertility."},
+  {"term":"Fertilizer","definition":"Chemical or mineral nutrient source (N, P, K)."},
+  {"term":"Irrigation","definition":"Artificial application of water to crops."},
+  {"term":"Weed control","definition":"Management of unwanted plants competing with crops."},
+  {"term":"Harvesting","definition":"Cutting and collecting mature crops."},
+  {"term":"Storage","definition":"Keeping produce safe from pests and moisture."}
+]

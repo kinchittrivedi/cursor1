@@ -1,0 +1,12 @@
+[
+  {"id":"ch01_num01","skill_id":"Irrigation","problem":"A drip system delivers 4 L/hr per emitter. If 100 emitters run for 2 hours, total water used?","solution_steps":["Flow per emitter = 4 L/hr","Total flow per hour = 4*100 = 400 L/hr","For 2 hours: 400*2=800 L"],"answer":"800 L"},
+  {"id":"ch01_num02","skill_id":"Fertilizer dose","problem":"Recommended nitrogen is 60 kg/ha. Urea has 46% N. How much urea needed per ha?","solution_steps":["Let urea required = x kg","0.46x = 60 ⇒ x = 60/0.46 ≈ 130.43 kg"],"answer":"≈130.4 kg/ha"},
+  {"id":"ch01_num03","skill_id":"Seed rate","problem":"Seed rate is 25 kg/ha. For 2.5 ha, seeds needed?","solution_steps":["Total = 25*2.5 = 62.5 kg"],"answer":"62.5 kg"},
+  {"id":"ch01_num04","skill_id":"Moisture","problem":"Grain moisture reduced from 18% to 12%. If initial mass 1000 kg, final mass?","solution_steps":["Water removed = 6% of wet basis","Final mass = 1000*(1-0.06)=940 kg (approx)"],"answer":"≈940 kg"},
+  {"id":"ch01_num05","skill_id":"Yield","problem":"Plot yield increased from 2.8 to 3.36 t/ha after rotation. Percentage increase?","solution_steps":["Increase = 0.56 t/ha","% increase = (0.56/2.8)*100 = 20%"],"answer":"20%"},
+  {"id":"ch01_num06","skill_id":"Weed density","problem":"Weed count reduced from 50 to 20 per m² after control. Reduction %?","solution_steps":["Reduction = 30","% = (30/50)*100 = 60%"],"answer":"60%"},
+  {"id":"ch01_num07","skill_id":"Irrigation interval","problem":"Crop needs 36 mm every 6 days. Daily ET is 5 mm. Is schedule adequate?","solution_steps":["6-day ET = 5*6 = 30 mm","Applied 36 mm ≥ 30 mm, adequate"],"answer":"Adequate"},
+  {"id":"ch01_num08","skill_id":"Storage loss","problem":"If storage loss is 3% per month, approximate loss over 3 months (no compounding)?","solution_steps":["3%*3=9%"],"answer":"≈9%"},
+  {"id":"ch01_num09","skill_id":"Spacing","problem":"Row spacing 20 cm, plant spacing 10 cm. Plants per m²?","solution_steps":["Area per plant=0.2*0.1=0.02 m²","Plants per m²=1/0.02=50"],"answer":"50"},
+  {"id":"ch01_num10","skill_id":"Water use","problem":"Sprinkler applies 15 mm over 0.2 ha. Water volume?","solution_steps":["Depth 15 mm=0.015 m","Volume=0.015*2000 m²=30 m³=30,000 L"],"answer":"30,000 L"}
+]

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Student - Class 8 Tutor</title>
+	<style>
+		body{font-family:sans-serif;max-width:800px;margin:20px auto}
+		.card{border:1px solid #ddd;border-radius:8px;padding:16px;margin:8px 0}
+		button{padding:8px 12px;margin:6px}
+	</style>
+</head>
+<body>
+	<h2>Student App</h2>
+	<div class="card">
+		<label>Student Name: <input id="name" placeholder="e.g., Aanya"/></label>
+		<button onclick="createStudent()">Create Student</button>
+		<div id="student"></div>
+	</div>
+	<div class="card">
+		<label>Chapter ID: <input id="chapter" placeholder="ch01"/></label>
+		<button onclick="startStudy()">Start</button>
+		<button onclick="nextQ()">Next</button>
+	</div>
+	<div class="card">
+		<h3>Question</h3>
+		<div id="qprompt"></div>
+		<div id="qoptions"></div>
+		<input id="answer" placeholder="Your answer (e.g., A)"/>
+		<button onclick="submitAnswer()">Submit</button>
+		<pre id="result"></pre>
+	</div>
+	<div class="card">
+		<h3>Gamification</h3>
+		<pre id="gstate"></pre>
+	</div>
+<script>
+let studentId=null
+let current={}
+
+async function createStudent(){
+	const name=document.getElementById('name').value||'Student'
+	const res=await fetch('/api/students/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name})})
+	const data=await res.json()
+	studentId=data.id
+	document.getElementById('student').innerText=JSON.stringify(data,null,2)
+}
+
+async function refreshG(){
+	if(!studentId) return
+	const res=await fetch('/api/gamify/state/'+studentId)
+	document.getElementById('gstate').innerText=JSON.stringify(await res.json(),null,2)
+}
+
+async function startStudy(){
+	const chapter=document.getElementById('chapter').value||'ch01'
+	const res=await fetch('/api/study/start',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({student_id:studentId,chapter_id:chapter,mode:'study'})})
+	current=await res.json()
+	renderQ()
+	refreshG()
+}
+
+async function nextQ(){
+	const chapter=document.getElementById('chapter').value||'ch01'
+	const res=await fetch('/api/study/next',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({student_id:studentId,chapter_id:chapter,mode:'study'})})
+	current=await res.json()
+	renderQ()
+}
+
+function renderQ(){
+	document.getElementById('qprompt').innerText=current.prompt||''
+	const opts=current.options||[]
+	document.getElementById('qoptions').innerHTML=opts.map((o,i)=>`<div>${String.fromCharCode(65+i)}. ${o}</div>`).join('')
+}
+
+async function submitAnswer(){
+	const chapter=document.getElementById('chapter').value||'ch01'
+	const ans=document.getElementById('answer').value
+	const skill=(current.metadata&&current.metadata.skill_id)||'general'
+	const res=await fetch('/api/study/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({student_id:studentId,chapter_id:chapter,skill_id:skill,question_id:current.id,answer:ans})})
+	const data=await res.json()
+	document.getElementById('result').innerText=JSON.stringify(data,null,2)
+	refreshG()
+}
+</script>
+</body>
+</html>
